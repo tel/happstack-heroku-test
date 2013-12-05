@@ -50,10 +50,10 @@ hConf (Config {..}) = H.nullConf { H.timeout = timeout, H.port = port }
 
 aConfig :: Config
 aConfig =
-  Config { port = 8000 &= I.help "Port number"
-                       &= I.typ "INT"
-         , timeout = 30 &= I.help "Timeout"
-                        &= I.typ "SECONDS"
+  Config { port    = 8000  &= I.help "Port number"
+                           &= I.typ "INT"
+         , timeout = 30    &= I.help "Timeout"
+                           &= I.typ "SECONDS"
          }
     &= I.summary "HKTest server"
     &= I.program "server"
