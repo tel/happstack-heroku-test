@@ -14,3 +14,10 @@ library
                      , happstack-lite
   hs-source-dirs:      src
   default-language:    Haskell2010
+
+executable server
+  main-is:             Server.hs
+  build-depends:       base >=4.6 && <4.7
+                     , hktest
+  hs-source-dirs:      exe
+  default-language:    Haskell2010
